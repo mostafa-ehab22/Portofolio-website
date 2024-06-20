@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Damion&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+* {
+  font-family: "Poppins", Impact, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+/*            HEADER               */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px 50px;
+  width: 100vw;
+  position: fixed;
+  z-index: 999;
+}
+
+.logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.9em;
+  color: #3a6cf4;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3a6cf4;
+  font-weight: 600;
+  font-size: 1.1em;
+  padding-left: 30px;
+}
+
+nav a:hover {
+  color: hsl(258, 97%, 55%);
+}
+
+nav a:active {
+  color: hsl(258, 97%, 75%);
+}
+
+/*               MAIN BODY                */
+
+body {
+  overflow-x: hidden;
+}
+
+section {
+  padding: 30px 200px;
+  scroll-snap-align: center;
+}
+
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(358deg, #000000, hsl(209, 69%, 20%));
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 7s ease infinite;
+  -moz-animation: AnimationName 7s ease infinite;
+  -o-animation: AnimationName 7s ease infinite;
+  animation: AnimationName 7s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 48% 0%;
+  }
+  50% {
+    background-position: 53% 100%;
+  }
+  100% {
+    background-position: 48% 0%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 48% 0%;
+  }
+  50% {
+    background-position: 53% 100%;
+  }
+  100% {
+    background-position: 48% 0%;
+  }
+}
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 48% 0%;
+  }
+  50% {
+    background-position: 53% 100%;
+  }
+  100% {
+    background-position: 48% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 48% 0%;
+  }
+  50% {
+    background-position: 53% 100%;
+  }
+  100% {
+    background-position: 48% 0%;
+  }
+}
+
+/* HELLO Part */
+.main h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: aliceblue;
+}
+/* Brief Summary Part */
+.main h2 span {
+  width: 100vw;
+  display: inline-block;
+  margin-top: 10px;
+  color: hsl(213, 100%, 60%);
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.main h3 {
+  color: aliceblue;
+  font-size: 1.2em;
+  font-weight: 700;
+  width: 75%;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+/* View My Work Button */
+.main-btn {
+  display: inline-block;
+  padding: 0.9375em 2.1875em;
+  width: 140px;
+  margin-bottom: 40px;
+  color: #fff;
+  background-color: hsl(224, 89%, 59%);
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  transition: 0.7s ease;
+}
+
+.main-btn:hover {
+  background-color: hsl(224, 89%, 49%);
+  transform: scale(1.1);
+}
+
+/* Icons */
+.social-icons a {
+  width: 48px;
+  display: inline-block;
+  color: aliceblue;
+  font-size: 1.8em;
+  padding-right: 1px;
+  padding-left: 40px;
+  align-items: center;
+}
+
+/*         Services            */
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 2.2em;
+  font-weight: 800;
+  color: #3a6cf4;
+  margin: 30px 0;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  max-width: 18rem;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  color: #3a6cf4;
+  font-size: 8em;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h3 {
+  color: #3a6cf4;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+/*            About              */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  background-color: hsl(0, 0%, 95%);
+  box-shadow: 0 5px 10px rgba(1, 1, 1, 30%);
+  border-radius: 25px;
+}
+
+.about-image img {
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 170px;
+  padding: 20px;
+  margin: 16px;
+}
+
+.about-text p {
+  font-size: 1em;
+}
+
+/* Technologies */
+
+.tech-container {
+  margin-bottom: 19px;
+}
+.tech-container h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "Madimi One", sans-serif;
+  font-size: 1.1em;
+  font-weight: 575;
+  color: hsl(0, 0%, 20%);
+}
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1.7em;
+  height: auto;
+  text-align: center;
+}
+.tech-icon {
+  padding: 10px 12px;
+}
+
+/*            Footer             */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  padding: 1.5em;
+  color: aliceblue;
+}
+
+.footer-title {
+  font-size: 1.3em;
+  font-weight: 500;
+  font-family: "Damion", cursive;
+  color: hsl(224, 89%, 59%);
+}
+
+.fa-copyright {
+  font-size: 15px;
+}
+
+.footer .social-icons a {
+  font-size: 1.4em;
+}
